@@ -1,0 +1,79 @@
+CREATE TABLE Flight
+(
+  Flight_ID INT NOT NULL,
+  No_of_Passengers INT NOT NULL,
+  Departure_Date DATE NOT NULL,
+  Departure_Time VARCHAR(10) NOT NULL,
+  Name VARCHAR(20) NOT NULL,
+  Available_seats INT NOT NULL,
+  Arrival_Time VARCHAR(10) NOT NULL,
+  Arrival_Date DATE NOT NULL,
+  Duration INT NOT NULL,
+  Sourcee INT NOT NULL,
+  PRIMARY KEY (Flight_ID)
+);
+
+CREATE TABLE Passenger
+(
+  NIC INT NOT NULL,
+  Passenger_ID INT NOT NULL,
+  Visa_Duration INT NOT NULL,
+  Visa_Type VARCHAR(20) NOT NULL,
+  Passport_number INT NOT NULL,
+  PRIMARY KEY (Passenger_ID),
+  UNIQUE (NIC),
+  UNIQUE (Passport_number)
+);
+
+CREATE TABLE Registration
+(
+  Password INT NOT NULL,
+  Number INT NOT NULL,
+  Feedback VARCHAR(500),
+  Name VARCHAR(25) NOT NULL,
+  Age INT NOT NULL,
+  Sex VARCHAR(10) NOT NULL,
+  Email_address VARCHAR(30) NOT NULL,
+  Passenger_ID INT NOT NULL,
+  FOREIGN KEY (Passenger_ID) REFERENCES Passenger(Passenger_ID),
+  UNIQUE (Email_address)
+);
+
+CREATE TABLE Flight_2
+(
+  Total_seats INT NOT NULL,
+  Available_seats INT NOT NULL,
+  Flight_ID INT NOT NULL,
+  FOREIGN KEY (Flight_ID) REFERENCES Flight(Flight_ID)
+);
+
+
+CREATE TABLE Ticket
+(
+  Ticket_ID INT NOT NULL,
+  Booking_Date DATE NOT NULL,
+  Passenger_Category VARCHAR(20) NOT NULL,
+  Payment_Status NUMERIC(10) NOT NULL,
+  Booking_Type VARCHAR(20) NOT NULL,
+  Flight_ID INT NOT NULL,
+  Passenger_ID INT NOT NULL,
+  PRIMARY KEY (Ticket_ID),
+  FOREIGN KEY (Flight_ID) REFERENCES Flight(Flight_ID),
+  FOREIGN KEY (Passenger_ID) REFERENCES Passenger(Passenger_ID)
+);
+
+CREATE TABLE Ticket_2
+(
+  Ticket_cost INT NOT NULL,
+  Seat_class VARCHAR(20) NOT NULL,
+  Tax INT NOT NULL,
+  Ticket_ID INT NOT NULL,
+  FOREIGN KEY (Ticket_ID) REFERENCES Ticket(Ticket_ID)
+);
+
+create table login
+(
+username varchar(25) NOT NULL,
+pasword varchar(25) NOT NULL,
+PRIMARY KEY (username)
+)

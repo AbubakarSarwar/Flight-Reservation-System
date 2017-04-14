@@ -1,0 +1,290 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>ZAIDI | FEEDBACK :: FAST AIRWAYS</title>
+		<link href="css/style.css" rel='stylesheet' type='text/css' />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		</script>
+		<script src="js/jquery.min.js"></script>
+		<!---smoth-scrlling---->
+			<script type="text/javascript">
+				$(document).ready(function(){
+									$('a[href^="#"]').on('click',function (e) {
+									    e.preventDefault();
+									    var target = this.hash,
+									    $target = $(target);
+									    $('html, body').stop().animate({
+									        'scrollTop': $target.offset().top
+									    }, 1000, 'swing', function () {
+									        window.location.hash = target;
+									    });
+									});
+								});
+				</script>
+		<!---//smoth-scrlling---->
+		<!----start-top-nav-script---->
+		<script type="text/javascript" src="js/flexy-menu.js"></script>
+		<script type="text/javascript">$(document).ready(function(){$(".flexy-menu").flexymenu({speed: 400,type: "horizontal",align: "right"});});</script>
+		<!----//End-top-nav-script---->
+		<!---webfonts---->
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+		<!---webfonts---->
+		<!---calender-style---->
+		<link rel="stylesheet" href="css/jquery-ui.css" />
+		<!---//calender-style---->
+		<!---images-hover-effects--->
+		<link rel="stylesheet" href="css/zalki_hover_img.css" type="text/css" media="screen">
+		<script src="js/jquery.zalki_hover_img.min-0.2.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			$(window).load(function(){
+				$('.main_box').ZalkiHoverImg(
+				);
+				});
+		</script>
+		<!---//images-hover-effects--->
+	</head>
+	<body>
+		<!----start-wrap---->
+			<!----start-top-header----->
+			<div class="top-header" id="header">
+				<div class="wrap">
+				<div class="top-header-left">
+					<ul>
+						<li><a href="#"><span> </span> Agent Login</a></li>
+						<li><a href="#"><span> </span> Agent Login</a></li>
+						<li><p><span> </span>Not a Member ? </p>&nbsp;<a class="reg" href="#"> Register</a></li>
+						<li><p class="contact-info">Call Us Now :815-123-4567</p></li>
+						<div class="clear"> </div>
+					</ul>
+				</div>
+				<div class="top-header-right">
+					<ul>
+						<li><a class="face" href="#"><span> </span></a></li>
+						<li><a class="twit" href="#"><span> </span></a></li>
+						<li><a class="thum" href="#"><span> </span></a></li>
+						<li><a class="pin" href="#"><span> </span></a></li>
+						<div class="clear"> </div>
+					</ul>
+				</div>
+				<div class="clear"> </div>
+			</div>
+			</div>
+			<!----//End-top-header----->
+			<!---start-header---->
+			<div class="header">
+				<div class="wrap">
+				<!--- start-logo---->
+				<div class="logo">
+					<a href="index.html"><img src="images/logo.png" title="voyage" /></a>
+				</div>
+				<!--- //End-logo---->
+				<!--- start-top-nav---->
+				<div class="top-nav">
+						<ul class="flexy-menu thick orange">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="destinations.html">BOOKING</a>
+								
+							</li>
+							<li><a href="criuses.html">FLights</a></li>
+							<li><a href="destinations.html">DESTINATIONS</a></li>
+							<li><a href="destinations.html">About</a></li>
+							<li class="active"><a href="blog.html">Feedback</a></li>
+						</ul>
+						<div class="search-box">
+							<div id="sb-search" class="sb-search">
+								<form>
+									<input class="sb-search-input" placeholder="Enter your search term..." type="search" name="search" id="search">
+								</form>
+							</div>
+						</div>
+						<!----search-scripts---->
+						<script src="js/modernizr.custom.js"></script>
+						<script src="js/classie.js"></script>
+						<script src="js/uisearch.js"></script>
+						<script>
+							new UISearch( document.getElementById( 'sb-search' ) );
+						</script>
+						<!----//search-scripts---->
+				</div>
+				<!--- //End-top-nav---->
+				<div class="clear"> </div>
+			</div>
+			<!---//End-header---->
+		</div>
+		<!---start-Blog---->
+		<div class="blog">
+			<div class="destination-head">
+				<div class="wrap">
+					<h3>FEEDBACK</h3>
+				</div>
+				<!---End-destinatiuons---->
+				<div class="find-place dfind-place">
+					<div class="wrap">
+						<div class="p-h">
+							<span>FIND YOUR</span>
+							<label>HOLYDAYS</label>
+						</div>
+						<!---strat-date-piker---->
+						  <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+						  <script>
+						  $(function() {
+						    $( "#datepicker" ).datepicker();
+						  });
+						  </script>
+						<!---/End-date-piker---->
+						<div class="p-ww">
+							<form>
+								<span> Where</span>
+								<input class="dest" type="text" value="Destination" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Destination';}">
+								<span> When</span>
+								<input class="date" id="datepicker" type="text" value="Select date" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Select date';}">
+								<input type="submit" value="Search" />
+							</form>
+						</div>
+						<div class="clear"> </div>
+					</div>
+				</div>
+				<!----//End-find-place---->
+			</div>
+			<div class="blog-grids">
+				<div class="wrap">
+					<div class="blog-grids-head">
+						<h3>Recent Posts</h3>
+					</div>
+					<div class="blog-grids-box">
+						<div class="blog-grid">
+							<div class="blog-poast-head">
+								<div class="blog-art-pic">
+									<a class="post-pic" href="#"> <img src="images/blog-pic.jpg" title="poast-name" /></a>
+								</div>
+								<div class="blog-poast-admin">
+									<a href="#"><img src="images/admin-pic1.jpg" title="admin" /></a>
+								</div>
+								
+								<div class="blog-poast-info">
+									<ul>
+										<li><a class="admin" href="#"><span> </span> Jessica </a></li>
+										<li><a class="p-date" href="#"><span> </span>1-01-2011 </a></li>
+										<li><a class="p-blog" href="#"><span> </span>Blog,News</a></li>
+										<div class="clear"> </div>
+									</ul>
+								</div>
+								</div>
+								<div class="blog-info">
+									<h3><a href="#">Lower fares, fewer restrictions</a></h3>
+									<p>There services are up to mark no doubt they have a brilliant staff and amazing people who manage stuff with responsibilty. Their booking services and mailing system is really fast just like their name. :D Love you FAST Airways. Keep flying :*
+.</p>
+									<a class="btn" href="#">DeTails</a>
+								</div>
+						</div>
+						<div class="blog-grid">
+							<div class="blog-poast-head">
+								<div class="blog-art-pic">
+									<a class="post-pic" href="#"> <img src="images/blog-pic1.jpg" title="poast-name" /></a>
+								</div>
+								<div class="blog-poast-admin">
+									<a href="#"><img src="images/admin-pic2.jpg" title="admin" /></a>
+								</div>
+								
+								<div class="blog-poast-info">
+									<ul>
+										<li><a class="admin" href="#"><span> </span> Marry</a></li>
+										<li><a class="p-date" href="#"><span> </span>4-03-2014 </a></li>
+										<li><a class="p-blog" href="#"><span> </span>Blog,News</a></li>
+										<div class="clear"> </div>
+									</ul>
+								</div>
+								</div>
+								<div class="blog-info">
+									<h3><a href="#">The joy of flying.</a></h3>
+									<p>They say experience the excitement and joy of flying. Well, they say that right! Fly FAST Airways fly! :).</p>
+									<a class="btn" href="#">DeTails</a>
+								</div>
+						</div>
+						<div class="blog-grid">
+							<div class="blog-poast-head">
+								<div class="blog-art-pic">
+									<a class="post-pic" href="#"> <img src="images/blog-pic2.jpg" title="poast-name" /></a>
+								</div>
+								<div class="blog-poast-admin">
+									<a href="#"><img src="images/admin-pic3.jpg" title="admin" /></a>
+								</div>
+								
+								<div class="blog-poast-info">
+									<ul>
+										<li><a class="admin" href="#"><span> </span>George</a></li>
+										<li><a class="p-date" href="#"><span> </span>8-05-2013 </a></li>
+										<li><a class="p-blog" href="#"><span> </span>Blog,News</a></li>
+										<div class="clear"> </div>
+									</ul>
+								</div>
+								</div>
+								<div class="blog-info">
+									<h3><a href="#">Simply wow.</a></h3>
+									<p>I am usually going to tours and all due to my business requirements. So I have been using many airlines lately. But my experience with FAST Airways is by far the best one!</p>
+									<a class="btn" href="#">DeTails</a>
+								</div>
+						</div>
+						<div class="blog-grid">
+							<div class="blog-poast-head">
+								<div class="blog-art-pic">
+									<a class="post-pic" href="#"> <img src="images/blog-pic.jpg" title="poast-name" /></a>
+								</div>
+								<div class="blog-poast-admin">
+									<a href="#"><img src="images/admin-pic4.jpg" title="admin" /></a>
+								</div>
+								
+								<div class="blog-poast-info">
+									<ul>
+										<li><a class="admin" href="#"><span> </span> Ashira </a></li>
+										<li><a class="p-date" href="#"><span> </span>2-06-2014 </a></li>
+										<li><a class="p-blog" href="#"><span> </span>Blog,News</a></li>
+										<div class="clear"> </div>
+									</ul>
+								</div>
+								</div>
+								<div class="blog-info">
+									<h3><a href="#">AWESOME EXPERIENCE WITH FAST AIRWAYS</a></h3>
+									<p>I used FAST AIRWAYS for the first time but now I am in love with it's overwhelming service. Fly with FAST AIRWAYS peeps!</p>
+									<a class="btn" href="#">DeTails</a>
+								</div>
+						</div>
+						<div class="clear"> </div>
+					</div>
+					<div class="criuse-grid-load">
+							<a href="#">FAST AIRWAYS</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!----//End-Blog---->
+		<!----//End-footer---->
+		<!---start-subfooter---->
+		<div class="subfooter">
+			<div class="wrap">
+				<ul>
+					<li><a href="index.html">Home</a><span>::</span></li>
+					<li><a href="destinations.html">Destinations</a><span>::</span></li>
+					<li><a href="criuses.html">Flights</a><span>::</span></li>
+					<li><a href="destinations.html">Contact Us</a><span>::</span></li>
+					<li><a href="destinations.html">Booking</a><span>::</span></li>
+					<li><a href="blog.html">About</a><span>::</span></li>
+					<li><a href="contact.html">Feedback</a></li>
+					<div class="clear"> </div>
+				</ul>
+				<p class="copy-right">DESIGNED by <a href="http://w3layouts.com/">ZAIDI</a></p>
+				<a class="to-top" href="#header"><span> </span> </a>
+			</div>
+		</div>
+		<!---//End-subfooter---->
+		<!----//End-wrap---->
+	</body>
+</html>
+
